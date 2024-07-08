@@ -1,0 +1,5 @@
+package com.green.session.controller;
+
+public class MemberController {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;testList.List&apos; to &apos;ListArray&apos;&#x0D;&#x0A;- Original project: &apos;testList&apos;&#x0D;&#x0A;- Original element: &apos;testList.List&apos;&#x0D;&#x0A;- Renamed element: &apos;testList.ListArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;List&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;testList{List.java[List" matchStrategy="1" name="ListArray" qualified="false" references="true" similarDeclarations="false" stamp="1718933916437" textual="false" version="1.0"/>
+</session>

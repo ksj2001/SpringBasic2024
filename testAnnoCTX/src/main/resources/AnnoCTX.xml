@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="person1" class="com.green.spring.Person">
+		<property name="name" value="에밀리"/>
+		<property name="age" value="20"/>
+	</bean>
+	<bean id="person2" class="com.green.spring.Person">
+		<property name="name" value="제임스"/>
+		<property name="age" value="30"/>
+	</bean>
+	<bean id="person3" class="com.green.spring.Person">
+		<property name="name" value="엘리스"/>
+		<property name="age" value="25"/>
+	</bean>
+	<bean id="personHandle1" class="com.green.spring.PersonHandler">
+		<property name="person" ref="person1"/>
+	</bean>
+	<bean id="personHandle2" class="com.green.spring.PersonHandler">
+		<property name="person" ref="person2"/>
+	</bean>
+	<bean id="personHandle3" class="com.green.spring.PersonHandler">
+		<property name="person" ref="person3"/>
+	</bean>
+</beans>

@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>id=${m.id}</h2>
+	<h2>pwd=${m.pwd}</h2>
+	<h2>name=${m.name}</h2>
+	<h2>email=${m.email}</h2>
+	<h2>birth=${m.birth}</h2>
+	<h2>sns=${m.sns}</h2>
+</body>
+</html>

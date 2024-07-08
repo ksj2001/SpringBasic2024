@@ -1,0 +1,59 @@
+package com.green.service.dao;
+
+import java.util.HashMap;
+
+import com.green.service.dto.MemberDTO;
+
+// MemberDAO는 IMemberDAO interface의 구현 클래스이다.
+
+public class MemberDAO implements IMemberDAO{
+	
+	// 실제 mySQL 데이터베이스를 연동하지 않았기 때문에, HashMap을 이용해서 임시 테이블을 생성
+	private HashMap<String,MemberDTO> dbMap;
+	
+	public MemberDAO() {
+		dbMap = new HashMap<String,MemberDTO>();
+	}
+
+	@Override
+	public void memberInsert(String memId, String memPw, String memMail, String memPhone1, String memPhone2,
+			String memPhone3) {
+		
+		// 테스트 코드 작성
+		
+		System.out.println("memberInsert()");
+		System.out.println("memId : " + memId);
+		System.out.println("memPw : " + memPw);
+		System.out.println("memMail : " + memMail);
+		System.out.println("memPhone1 : " + memPhone1);
+		System.out.println("memPhone2 : " + memPhone2);
+		System.out.println("memPhone3 : " + memPhone3);
+		
+		
+		MemberDTO mdto = new MemberDTO();
+		mdto.setMemId(memId);
+		mdto.setMemPw(memPw);
+		mdto.setMemMail(memMail);
+		mdto.setMemPhone1(memPhone1);
+		mdto.setMemPhone2(memPhone2);
+		mdto.setMemPhone3(memPhone3);
+	}
+
+	@Override
+	public MemberDTO memberSelect(String memID, String memPw) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void memberUpdate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void memberDelete() {
+		// TODO Auto-generated method stub
+		
+	}
+}

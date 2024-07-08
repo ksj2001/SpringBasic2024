@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<!-- xml 파일의 주석 단축키 : ctrl + shift + /, 해제 : ctrl + shift + \ -->
+	<!-- bean의 속성 id='tWalk'는 개발자가 알아서 정한다. -->
+	<!-- bean의 속성 class='' 반드시 패키지명.클래스이름 으로 작성한다. -->
+	<!-- bean 태그에 의해서 자동으로 객체가 생성된다. -->
+	<!-- 객체가 생성이 되었다는 것은 메모리에 로드가 되었다는 뜻이다. -->
+	<!-- 이를 스프링에서는 스프링 컨테이너(객체를 담고있다.)라 한다. -->
+	<!-- TransportationWork tk = new TransportationWork(); -->
+	
+	<!-- 의존 객체 자동 주입인 @Autowired를 생성하기 위한 태그 -->
+	<context:annotation-config/>
+	<bean id="person" class="testPerson.Person">
+		<!-- <property name="name" value="제임스"/>
+		<property name="age" value="20"/>
+		<property name="gender" value="남"/>
+		<property name="phone" value="111-1111-1111"/> -->
+	</bean>
+	<!-- <bean id="person2" class="testPerson.Person"> -->
+		<!-- <property name="name" value="엘리스"/>
+		<property name="age" value="32"/>
+		<property name="gender" value="여"/>
+		<property name="phone" value="555-5555-5555"/> -->
+	<!-- </bean> -->
+	<bean id="personHandle" class="testPerson.PersonHandler">
+		<!-- <property name="person" ref="person1"></property>  -->
+	</bean>
+	<!-- <bean id="personHandle2" class="testPerson.PersonHandler">
+		<property name="person" ref="person2"></property> 
+	</bean> -->
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<bean id="engine" class="com.green.quiz05.Engine">
+		<property name="fueltype" value="디젤"/>
+		<property name="cc" value="1991"/>
+		<property name="hp" value="245"/>
+		<property name="fuelEffciency" value="12.5"/>
+	</bean>
+
+</beans>

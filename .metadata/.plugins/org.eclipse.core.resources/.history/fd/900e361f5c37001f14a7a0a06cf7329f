@@ -1,0 +1,5 @@
+package com.green.mvc03.dto;
+
+public class MemberDTO {
+
+}

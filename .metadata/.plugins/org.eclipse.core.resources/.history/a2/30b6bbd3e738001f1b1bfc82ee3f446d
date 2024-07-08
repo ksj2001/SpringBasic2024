@@ -1,0 +1,32 @@
+package com.green.service.Service;
+
+public class Snippet {
+	System.out.println("memberInsert()");
+			System.out.println("memId : " + memId);
+			System.out.println("memPw : " + memPw);
+			System.out.println("memMail : " + memMail);
+			System.out.println("memPhone1 : " + memPhone1 + "-" + memPhone2 + "-" + memPhone3);
+			
+			
+			MemberDTO mdto = new MemberDTO();
+			mdto.setMemId(memId);
+			mdto.setMemPw(memPw);
+			mdto.setMemMail(memMail);
+			mdto.setMemPhone1(memPhone1);
+			mdto.setMemPhone2(memPhone2);
+			mdto.setMemPhone3(memPhone3);
+			
+			// HashMap으로 만든 임시 테이블에 id를 key값으로 저장
+			dbMap.put(memId, mdto);
+			
+			for(String key: dbMap.keySet()) {
+				MemberDTO value = dbMap.get(key);
+				System.out.print("memberId:"+value.getMemId()+"\t");
+				System.out.print("|memberPw:"+value.getMemPw()+"\t");
+				System.out.print("|memberMail:"+value.getMemMail()+"\t");
+				System.out.print("|memberPhone:"+value.getMemPhone1()+" - "+
+												 value.getMemPhone2()+" - "+
+												 value.getMemPhone3()+"\n");
+			}
+}
+

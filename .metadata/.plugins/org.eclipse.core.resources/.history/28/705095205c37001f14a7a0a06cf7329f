@@ -1,0 +1,11 @@
+package com.green.mvc03.controller;
+
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class MemberController {
+	@RequestMapping(value="/member/login2" method="post")
+	public String goView02(@ModelAttribute("m") MemberDTO mdto, Model model) {
+		return "member/resultLogin2";
+	}
+}

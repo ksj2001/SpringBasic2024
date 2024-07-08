@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- root-context.xml은 no web에 해당하는 객체를 생성하는 container이다. -->
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="person1" class="com.green.mvc.dto.PersonDTO">
+		<property name="name" value="에밀리"/>
+		<property name="age" value="20"/>
+		<property name="cdto" ref="context1"/>
+	</bean>
+	
+	<bean id="context1" class="com.green.mvc.dto.ContextDTO">
+		<property name="phone" value="010-1111-1111"/>
+		<property name="add" value="서울시 종로구"/>
+	</bean>
+	
+	<bean id="person2" class="com.green.mvc.dto.PersonDTO">
+		<property name="name" value="제임스"/>
+		<property name="age" value="30"/>
+		<property name="cdto" ref="context2"/>
+	</bean>
+	
+	<bean id="context2" class="com.green.mvc.dto.ContextDTO">
+		<property name="phone" value="010-8888-8888"/>
+		<property name="add" value="서울시 마포구"/>
+	</bean>
+</beans>
