@@ -12,14 +12,33 @@ public class MemberService implements IMemberService{
 	MemberDao dao;
 	
 	@Override
-	public void memberRegister(Member member) {
-		dao.memberInsert(member);
+	public int memberRegister(Member member) {
+		int result = dao.memberInsert(member);
+		if(result==0) {
+			System.out.println("Join 실패");
+		}else {
+			System.out.println("Join 성공");
+		}
+		return result;
 	}
 
 	@Override
 	public Member memberSearch(Member member) {
 		Member mem = dao.memberSelect(member);
+		
+		if(mem==null) {
+			System.out.println("로그인 실패");
+		}else {
+			System.out.println("로그인 성공");
+		}
+		
 		return mem;
+	}
+
+	@Override
+	public int memberModify(Member member) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

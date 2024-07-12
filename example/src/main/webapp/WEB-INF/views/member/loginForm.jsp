@@ -13,6 +13,7 @@
 		<form action="/example/member/login" method="post">
 			<input type="text" name="id" placeholder="이메일 입력"><br>
 			<input type="password" name="pwd" placeholder="비밀번호"><br>
+			<input type="text" name="toURL" value="${param.toURL}"><br>
 			<input type="submit" value="로그인">
 		</form>
 		<div class="util">

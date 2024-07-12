@@ -5,8 +5,7 @@ import java.lang.reflect.Member;
 import com.green.example.dto.MemberDTO;
 
 public interface IMemberDAO {
-	void memberInsert(String id, String pwd, String name,
-			String email, String birth, String sns);
-	
+	int memberInsert(MemberDTO mdto);
 	MemberDTO memberSelect(MemberDTO mdto);
+	int memberDelete(MemberDTO mdto);
 }

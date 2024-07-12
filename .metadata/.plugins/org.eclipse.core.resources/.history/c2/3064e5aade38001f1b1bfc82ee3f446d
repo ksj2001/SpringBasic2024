@@ -1,5 +1,0 @@
-package com.green.service.dto;
-
-public interface IMemberService {
-
-}
