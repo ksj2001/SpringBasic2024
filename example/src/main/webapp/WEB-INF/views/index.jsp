@@ -11,7 +11,7 @@
 <body>
     <%-- <h1>${member.getId() }</h1> --%>
     <c:set var="loginOut" value="${member.getId() == null ? 'Login' : 'Logout'}"/>
-    <c:set var="loginOutLink" value="${member.getId() == null ?'/example/member/loginForm' : '/example/member/logout'}"/>
+    <c:set var="loginOutLink" value="${member.getId() == null ? '/example/member/loginForm' : '/example/member/logout'}"/>
     <c:set var="signInDeleteAcc" value="${member.getId() == null ? 'Sign in' : 'Delete Account'}"/>
     <c:set var="signInDeleteAccLink" value="${member.getId() == null ? '/example/member/joinForm' : '/example/member/deleteAcc'}"/>
 	<div class="menuBar">

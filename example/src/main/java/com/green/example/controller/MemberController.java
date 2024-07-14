@@ -68,7 +68,12 @@ public class MemberController {
 	@RequestMapping("/login")
 	public String loginForm(MemberDTO member, HttpSession session, String toURL) {
 		MemberDTO mdto = service.memberSearch(member);
-		session.setAttribute("member", mdto);
+		try {
+			session.setAttribute("member", mdto);
+			toURL = toURL == null || toURL.equals("") ? "/" : toURL; 
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 		return "redirect:" + toURL;
 	}
 	
