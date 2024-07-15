@@ -5,6 +5,7 @@
 <aop-project name="MVC"/>
 <aop-project name="session"/>
 <aop-project name="MVC_join"/>
+<aop-project name="MyBatisMember"/>
 <aop-project name="service"/>
 <aop-project name="MVC_02"/>
 <aop-project name="MVC_03"/>

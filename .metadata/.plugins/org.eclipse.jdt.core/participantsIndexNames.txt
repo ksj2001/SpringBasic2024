@@ -9,12 +9,16 @@ D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\785897581.ind
 \MVC_03\src\main\java
 D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3968840657.index
 \example\src\main\java
+D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3523182016.index
+\MyBatisMember\src\main\java
 D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\579804149.index
 \session\src\main\java
 D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\556580575.index
 \MVC_join\src\main\java
 D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2624636431.index
 \cookie\src\main\java
+D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2534580098.index
+\MyBatisMember\src\main\java
 D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1856493963.index
 \cookie\src\main\java
 D:\springPjt\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\385174102.index

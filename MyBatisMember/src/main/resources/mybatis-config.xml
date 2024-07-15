@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- typeAliases는 너무 긴 경로를 별칭으로 줄여서 사용할 때 쓰이는 태그 -->
+	<typeAliases>
+		<typeAlias alias="DAO" type="com.green.mybatis.dao.MemberDAO"/>
+	</typeAliases>
+</configuration>

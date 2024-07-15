@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!-- namespace의 별칭은 'DAO' -->
+<mapper namespace="com.green.mybatis.dao.MemberDAO">
+    <!-- resultType="com.green.mybatis.dto.MemberDTO  ===  rs = pstmt.executeQuery() -->
+	<select id="selectMemberList" resultType="com.green.mybatis.dto.MemberDTO">
+		SELECT mNo, mId, mName
+		FROM member02 ORDER BY mNo DESC;
+	</select>
+	
+	<select id="selectBymNo" resultType="com.green.mybatis.dto.MemberDTO">
+		SELECT mNo, mId, mName
+		FROM member02
+		WHERE mNo = #{mNo};
+	</select>
+	
+	<!-- ? === #{param1},#{param2} -->
+	<insert id="insertMember">
+		INSERT INTO member02(mNo,mId,mName)
+		VALUES(null,#{param1},#{param2});
+	</insert>
+	
+	<update id="updateMember">
+		UPDATE member02 
+		SET mName=#{param1}
+		WHERE mNo = #{param2};
+	</update>
+	
+	<delete id="deleteMember">
+		DELETE FROM member02
+		WHERE mNo = #{mNo};
+	</delete>
+</mapper>

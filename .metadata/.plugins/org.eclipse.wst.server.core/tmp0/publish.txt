@@ -1,5 +1,6 @@
 #Tomcat publish data
-#Sun Jul 14 21:20:38 KST 2024
+#Mon Jul 15 13:01:25 KST 2024
+org.eclipse.jst.jee.server\:MyBatisMember=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\\wtpwebapps\\MyBatisMember
 org.eclipse.jst.jee.server\:session=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\\wtpwebapps\\session
 org.eclipse.jst.jee.server\:example=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\\wtpwebapps\\example
 org.eclipse.jst.jee.server\:MVC_join=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\\wtpwebapps\\MVC_join
@@ -8,3 +9,4 @@ org.eclipse.jst.jee.server\:MVC=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\
 org.eclipse.jst.jee.server\:MVC_02=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\\wtpwebapps\\MVC_02
 org.eclipse.jst.jee.server\:MVC_03=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\\wtpwebapps\\MVC_03
 org.eclipse.jst.jee.server\:service=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\\wtpwebapps\\service
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\KIM\\.m2\\repository\\org\\springframework\\spring-web\\5.0.7.RELEASE\\spring-web-5.0.7.RELEASE.jar=C\:\\apache-tomcat-8.5.95\\apache-tomcat-8.5.95\\wtpwebapps\\MyBatisMember\\WEB-INF\\lib\\spring-web-5.0.7.RELEASE.jar
