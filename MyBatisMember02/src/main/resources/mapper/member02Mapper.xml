@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="Member">
+	<!-- table에 insert하기 parameterType은 mybatis-config.xml에서 지정한 별칭을 사용한다.-->
+	<!-- 본래의 parameterType의 경로는 com.green.member02.dto.Member02DTO -->
+	<insert id="save" parameterType="member">
+		INSERT INTO member_table(memberEmail,memberPassword,memberName,memberAge,memberMobile)
+		VALUES(#{memberEmail},#{memberPassword},#{memberName},#{memberAge},#{memberMobile})
+	</insert>
+	<select id="login" parameterType="member" resultType="member">
+		SELECT * FROM member_table
+		WHERE memberEmail=#{memberEmail} and memberPassword=#{memberPassword}
+	</select>
+	<select id="findAll" parameterType="member" resultType="member">
+		SELECT * FROM member_table
+	</select>
+	<select id="findById" parameterType="Long" resultType="member">
+		SELECT * FROM member_table
+		WHERE id=#{id}
+	</select>
+	<update id="update" parameterType="Member">
+		UPDATE member_table SET memberEmail=#{memberEmail},memberPassword=#{memberPassword},
+		memberName=#{memberName},memberAge=#{memberAge},memberMobile=#{memberMobile}
+		WHERE id=#{id}
+	</update>
+	<delete id="delete" parameterType="Long">
+		DELETE FROM member_table
+		WHERE id=#{id}
+	</delete>
+</mapper>

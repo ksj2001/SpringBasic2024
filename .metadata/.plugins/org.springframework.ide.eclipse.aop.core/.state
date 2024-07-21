@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="example"/>
-<aop-project name="cookie"/>
 <aop-project name="MVC"/>
+<aop-project name="MVC_02"/>
+<aop-project name="cookie"/>
+<aop-project name="MyBatisMember02"/>
 <aop-project name="session"/>
 <aop-project name="MVC_join"/>
 <aop-project name="MyBatisMember"/>
 <aop-project name="service"/>
-<aop-project name="MVC_02"/>
+<aop-project name="MyBatisContact"/>
 <aop-project name="MVC_03"/>
 </aop-reference-model>
