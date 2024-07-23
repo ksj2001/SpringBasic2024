@@ -17,4 +17,6 @@ public interface IMember02DAO {
 	public void delete(Long id);
 	// update
 	public int update(Member02DTO memberDTO);
+	// 로그인 된 이메일 검색
+	public Member02DTO findByMemberEmail(String email);
 }

@@ -2,6 +2,7 @@
 <aop-reference-model>
 <aop-project name="example"/>
 <aop-project name="MVC"/>
+<aop-project name="codingboard"/>
 <aop-project name="MVC_02"/>
 <aop-project name="cookie"/>
 <aop-project name="MyBatisMember02"/>

@@ -49,4 +49,9 @@ public class Member02DAOImpl implements IMember02DAO{
 		return sql.update("Member.update", memberDTO);
 	}
 
+	@Override
+	public Member02DTO findByMemberEmail(String email) {
+		return sql.selectOne("Member.findByMemberEmail", email);
+	}
+
 }

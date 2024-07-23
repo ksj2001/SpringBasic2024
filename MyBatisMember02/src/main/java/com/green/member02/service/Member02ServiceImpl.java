@@ -48,10 +48,17 @@ public class Member02ServiceImpl implements IMember02Service{
 	public boolean update(Member02DTO memberDTO) {
 		int result = mdao.update(memberDTO);
 		if(result>0) {
+			System.out.println("update 완료");
 			return true;
 		}else {
+			System.out.println("update 미완료");
 			return false;
 		}
+	}
+
+	@Override
+	public Member02DTO findByMemberEmail(String email) {
+		return mdao.findByMemberEmail(email);
 	}
 
 }

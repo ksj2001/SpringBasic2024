@@ -17,4 +17,6 @@ public interface IMember02Service {
 	public void delete(Long id);
 	// update
 	public boolean update(Member02DTO memberDTO);
+	// 로그인 된 이메일 검색
+	public Member02DTO findByMemberEmail(String email);
 }

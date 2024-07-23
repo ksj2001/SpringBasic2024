@@ -78,12 +78,28 @@ public class Member02Controller {
 		return "detail";
 	}
 	
-	// 회원정보 수정 화면
+	// 회원정보 수정 화면으로 이동
 	@RequestMapping(value="/update",method = RequestMethod.GET)
-	public String updateForm(Member02DTO mdto, HttpSession session) {
-	    System.out.println(session.getAttribute("name"));
-		session.getAttribute("email");
+	public String updateForm(HttpSession session, Model model) {
+		// 로그인 된 session에 담아둔 이메일을 꺼내서 loginEmail로 저장
+	    String loginEmail = (String) session.getAttribute("email");
+	    // 로그인 된 loginEmail에 해당하는 한 사람의 회원정보를 Member02DTO에 담는다.
+	    Member02DTO mem = mService.findByMemberEmail(loginEmail);
+	    // update.jsp 화면으로 회원정보를 넘김.
+		model.addAttribute("mdto", mem);
 		return "update";
+	}
+	
+	// 회원정보 수정 처리
+	@RequestMapping(value="/update",method = RequestMethod.POST)
+	public String update(@ModelAttribute Member02DTO mdto) {
+		boolean updateResult = mService.update(mdto);
+		System.out.println("update 완료 :" + updateResult);
+		if(updateResult) {
+			return "redirect:/list?id="+mdto.getId();
+		}else {
+			return "index";
+		}
 	}
 	
 	// 회원정보 삭제
